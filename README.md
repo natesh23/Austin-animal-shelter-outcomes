@@ -10,18 +10,33 @@ The problem is a typical binary classification problem. We would be building cla
 ### Libraries used
 
 import pandas as pd
+
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 %matplotlib inline
+
 import seaborn as sns
+
 import os
+
 import pickle
+
 np.random.seed(42)
+
 import time
+
 from sklearn.preprocessing import LabelEncoder
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.ensemble import RandomForestClassifier
+
 from sklearn.metrics import classification_report, accuracy_score
+
 from sklearn.ensemble import GradientBoostingClassifier
+
 from sklearn.model_selection import GridSearchCV
+
 from sklearn.ensemble.partial_dependence import partial_dependence, plot_partial_dependence
